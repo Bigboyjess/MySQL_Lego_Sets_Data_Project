@@ -11,8 +11,8 @@ MySQL query Goals:
 - Screen the data for out-of-range values, invalid negative counts, and duplicate set IDs.
 
 Tools
-- MySQL — load the CSV, queries, and data analysis.
-- R (ggplot2) — visualize exported query results.
+- MySQL - load the CSV, queries, and data analysis.
+- R (ggplot2) - visualize exported query results.
 Getting started:
 1. Load the dataset into MySQL
 Create or select a database, then import datasets/lego_sets.csv and use your preferred CSV import method.
@@ -34,9 +34,9 @@ img_url
 Ensure the imported column names match these names. The numerical columns should be imported as numeric types, text and URL fields should be text types. Missing values should remain NULL.
 2. Run the data-screening queries
 Run the scripts in datascreening/ against the lego_sets table:
-- C1 — Checking the range: checks the minimum and maximum years and the number of distinct years.
-- C2 — Checking for invalid values: returns rows with years outside 1975–2025 or negative part, minifigure, or unique-color counts.
-- C3 — Checking IDs: identifies set_num values that occur more than once.
+- C1 - Checking the range: checks the minimum and maximum years and the number of distinct years.
+- C2 - Checking for invalid values: returns rows with years outside 1975–2025 or negative part, minifigure, or unique-color counts.
+- C3 - Checking IDs: identifies set_num values that occur more than once.
 Review the results before proceeding. These scripts identify potential data issues.
 3. Run the analysis queries
 Run the SQL files in analysis/. Each query returns a result set for a particular question:
