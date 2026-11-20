@@ -9,18 +9,7 @@ MySQL query Goals:
 - Compare set characteristics across decades.
 - Investigate minifigure counts, popular themes, year-over-year release changes, the largest sets, and color variety.
 - Screen the data for out-of-range values, invalid negative counts, and duplicate set IDs.
-Repository structure
-MySQL_Lego_Set_Data_Project/
-├── datasets/
-│   ├── lego_sets.csv             # Main dataset
-│   ├── A1.csv ... A8.csv         # Results for SQL analyses
-│   └── A1.5.csv
-├── datascreening/                # Dataset checks (C1–C3)
-├── analysis/                     # Analysis queries (A1–A8)
-├── R/
-│   └── data_visual_code.R        # R script
-├── data_visualizations/          # Data visualization PDFs
-└── README.md
+
 Tools
 - MySQL — load the CSV, queries, and data analysis.
 - R (ggplot2) — visualize exported query results.
